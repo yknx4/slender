@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://crimsonray.github.io/slender/</loc>
+    <lastmod>2015-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://crimsonray.github.io/slender/article/hugo-template-primer/</loc>
+    <lastmod>2015-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://crimsonray.github.io/slender/article/creating-a-new-theme/</loc>
+    <lastmod>2015-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://crimsonray.github.io/slender/article/getting-started-with-hugo/</loc>
+    <lastmod>2015-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://crimsonray.github.io/slender/article/migrate-to-hugo-from-jekyll/</loc>
+    <lastmod>2015-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://crimsonray.github.io/slender/about/</loc>
+    <lastmod>2015-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>
