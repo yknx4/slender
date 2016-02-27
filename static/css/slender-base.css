@@ -183,7 +183,7 @@ footer p {
 /* Smaller screen sizes */
 
 @media (max-width: 768px) {
-    header h1 {
+    h1.brand {
         font-size: 48px;
     }
     #article-listing {
