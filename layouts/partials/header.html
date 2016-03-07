@@ -12,7 +12,7 @@
         <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
         <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
         {{ .Hugo.Generator }}
-        <link rel="icon" href="{{ "/assets/favicon.ico" | absURL }}" type="image/x-icon"> 
+        <link rel="icon" href="{{ "/assets/favicon.ico" | absURL }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ "/css/slender-base.css" | absURL }}">
         <link rel="stylesheet" href="{{ "/css/slender-color-schemes.css" | absURL }}">
         <link rel="stylesheet" href="{{ "/css/font-awesome-4.5.0.min.css" | absURL }}">
@@ -39,7 +39,7 @@
                         <p>on <strong>{{ .Date.Format "Mon, Jan 02, 2006" }}</strong></p>
                     </aside>
                 {{ else }}
-                    <h1 class="brand">{{ .Site.Title }}</h1>
+                    <h1 class="brand">{{ .Site.Title }} <small>{{ .Site.Params.subtitle }}</small></h1>
                     <aside>
                         <p>{{ .Site.Params.tagline | safeHTML }}</p>
                         <p>

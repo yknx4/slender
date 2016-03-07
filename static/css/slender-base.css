@@ -51,15 +51,19 @@ header {
 h1.brand {
     font-family: "Fjalla One", Helvetica, sans-serif;
     font-size: 68px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     letter-spacing: 6px;
     text-align: center;
+}
+
+h1 small{
+  font-size: 34px;
 }
 
 h1.title {
     font-family: "Fjalla One", Helvetica, sans-serif;
     font-size: 48px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     letter-spacing: 3px;
     text-align: center;
     margin-top: 112px;
@@ -185,6 +189,9 @@ footer p {
 @media (max-width: 768px) {
     h1.brand {
         font-size: 48px;
+    }
+    small{
+      font-size: 24px;
     }
     #article-listing {
         margin: 20px;
