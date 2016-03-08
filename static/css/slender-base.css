@@ -14,6 +14,19 @@ body {
     margin: 0;
 }
 
+/* Personal */
+.pluginButton{
+  background: black !important;
+}
+
+.fb-like{
+  overflow: hidden;
+  background: white;
+}
+
+.spacer {  margin-top: 20px; }
+
+
 /* Container */
 
 .container {

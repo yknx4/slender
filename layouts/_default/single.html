@@ -1,14 +1,23 @@
 {{ partial "header.html" . }}
 <article class="article-content">
-    {{ .Content }}
-  <br>
-  {{ with .Params.tags }}
-  <span class="f-post-tags"><i class="fa fa-tag"></i>
-    {{ delimit  . ", " }}
-  </span>{{ end }}<br>
-  {{ with .Params.categories }}
-  <span class="f-post-categories"><i class="fa fa-folder-o"></i>
-    {{ delimit  . ", " }}
-  </span>{{ end }}
+  {{ .Content }}
+  <section class="article-social">
+    <section class ="article-social-info">
+      <div class="fb-like pull-right" data-href='http:{{.Permalink}}' data-layout="button_count" data-action="like" data-show-faces="false" data-share="true">
+      </div>
+      <div class="pull-left">
+        {{ with .Params.tags }}
+        <span class="f-post-tags"><i class="fa fa-tag"></i>
+          {{ delimit  . ", " }}
+        </span>{{ end }}<br>
+        {{ with .Params.categories }}
+        <span class="f-post-categories"><i class="fa fa-folder-o"></i>
+          {{ delimit  . ", " }}
+        </span>{{ end }}
+      </div>
+    </section>
+    <div class="fb-comments" data-href='http:{{.Permalink}}' data-width="100%"  data-numposts="5">
+    </div>
+  </section>
 </article>
 {{ partial "footer.html" . }}
