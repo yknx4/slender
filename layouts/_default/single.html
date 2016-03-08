@@ -1,5 +1,14 @@
 {{ partial "header.html" . }}
 <article class="article-content">
     {{ .Content }}
+  <br>
+  {{ with .Params.tags }}
+  <span class="f-post-tags"><i class="fa fa-tag"></i>
+    {{ delimit  . ", " }}
+  </span>{{ end }}<br>
+  {{ with .Params.categories }}
+  <span class="f-post-categories"><i class="fa fa-folder-o"></i>
+    {{ delimit  . ", " }}
+  </span>{{ end }}
 </article>
 {{ partial "footer.html" . }}
