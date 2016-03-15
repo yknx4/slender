@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<section id="article-listing">
+    <article class='text-center'>
+        <h1 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <ul>
+        {{ $data := .Data }}
+        {{ range $key, $value := .Data.Terms.ByCount }}
+          <li><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a> {{ $value.Count }}</li>
+        {{ end }}
+        </ul>
+    </article>
+</section>
+{{ partial "footer.html" . }}

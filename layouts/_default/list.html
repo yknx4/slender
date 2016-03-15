@@ -1,0 +1,8 @@
+{{ partial "header.html" . }}
+<section id="article-listing">
+    {{ range .Paginator.Pages }}
+			{{ .Render "li" }}
+		{{ end }}
+		{{ template "_internal/pagination.html" . }}
+</section>
+{{ partial "footer.html" . }}
